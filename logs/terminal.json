@@ -1,0 +1,46 @@
+[
+  {
+    "timestamp": "2026-02-03T15:47:40.919133",
+    "prompt": "Explain how AI works in a few words",
+    "gemini": {
+      "model": "gemini-3-flash-preview",
+      "response": "AI finds patterns in data to make predictions.",
+      "input_tokens": 9,
+      "output_tokens": 9,
+      "total_tokens": 259,
+      "time_seconds": 2.85,
+      "cost_usd": 3.1e-05
+    },
+    "ollama": {
+      "model": "qwen2.5:3b",
+      "response": "AI works by processing data and learning from patterns to make predictions or take actions without being explicitly programmed.",
+      "input_tokens": 38,
+      "output_tokens": 21,
+      "total_tokens": 59,
+      "time_seconds": 4.97,
+      "cost_usd": 0.0
+    }
+  },
+  {
+    "timestamp": "2026-02-03T15:49:36.558573",
+    "prompt": "Cuentame un chiste sobre programadores.",
+    "gemini": {
+      "model": "gemini-3-flash-preview",
+      "response": "Aquí tienes uno de los clásicos más populares en el mundo de la informática:\n\nUna esposa le dice a su marido, que es programador:\n— \"Ve al supermercado y compra un cartón de leche. Y **si hay huevos, trae doce**\".\n\nA los veinte minutos, el marido vuelve con **12 cartones de leche**.\n\nLa esposa, totalmente confundida, le pregunta:\n— \"¿Pero por qué has comprado doce cartones de leche?\".\n\nY él responde:\n— \"¡Porque había huevos!\".",
+      "input_tokens": 11,
+      "output_tokens": 111,
+      "total_tokens": 470,
+      "time_seconds": 4.53,
+      "cost_usd": 0.000339
+    },
+    "ollama": {
+      "model": "qwen2.5:3b",
+      "response": "¡Claro que sí! Aunque hay muchos tipos de chistes sobre programadores, aquí tienes uno:\n\n¿Qué hace un programa celoso cuando su pareja no está en casa?\nSe declara inseguro (conecta la base de datos).\n\nEstos chistes a menudo juegan con conceptos avanzados y el lenguaje de programación, ofreciéndoles una oportunidad para bromear sobre temas que pueden parecer serios o técnicos.",
+      "input_tokens": 39,
+      "output_tokens": 98,
+      "total_tokens": 137,
+      "time_seconds": 8.06,
+      "cost_usd": 0.0
+    }
+  }
+]
