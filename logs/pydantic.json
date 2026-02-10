@@ -1,0 +1,176 @@
+[
+  {
+    "timestamp": "2026-02-05T13:40:25.926611",
+    "test_type": "structured_output",
+    "schema": "Pelicula",
+    "prompt": "Genera información sobre una película famosa en formato JSON.\nEl JSON debe tener EXACTAMENTE esta estructura (sin texto adicional, solo el JSON):\n{\n    \"titulo\": \"string\",\n    \"año\": number (1900-2026),\n    \"director\": \"string\",\n    \"genero\": [\"string\", ...],\n    \"calificacion\": number (0-10),\n    \"duracion_minutos\": number,\n    \"sinopsis\": \"string (mínimo 10 caracteres)\",\n    \"actores_principales\": [\"string\", ...],\n    \"presupuesto_millones_usd\": number o null,\n    \"ganadora_oscar\": boolean\n}\n\nResponde SOLO con el JSON válido, sin explicaciones ni markdown.",
+    "gemini": {
+      "model": "gemini-3-flash-preview",
+      "raw_response": "{\n    \"titulo\": \"El Padrino\",\n    \"año\": 1972,\n    \"director\": \"Francis Ford Coppola\",\n    \"genero\": [\"Crimen\", \"Drama\"],\n    \"calificacion\": 9.2,\n    \"duracion_minutos\": 175,\n    \"sinopsis\": \"El envejecido patriarca de una dinastía del crimen organizado transfiere el control de su imperio clandestino a su reacio hijo.\",\n    \"actores_principales\": [\"Marlon Brando\", \"Al Pacino\", \"James Caan\"],\n    \"presupuesto_millones_usd\": 6,\n    \"ganadora_oscar\": true\n}",
+      "validation_passed": true,
+      "validation_error": null,
+      "parsed_data": {
+        "titulo": "El Padrino",
+        "año": 1972,
+        "director": "Francis Ford Coppola",
+        "genero": [
+          "Crimen",
+          "Drama"
+        ],
+        "calificacion": 9.2,
+        "duracion_minutos": 175,
+        "sinopsis": "El envejecido patriarca de una dinastía del crimen organizado transfiere el control de su imperio clandestino a su reacio hijo.",
+        "actores_principales": [
+          "Marlon Brando",
+          "Al Pacino",
+          "James Caan"
+        ],
+        "presupuesto_millones_usd": 6.0,
+        "ganadora_oscar": true
+      },
+      "time_seconds": 5.13
+    },
+    "ollama": {
+      "model": "qwen2.5:3b",
+      "raw_response": "{\n    \"titulo\": \"La La Land\",\n    \"año\": 2016,\n    \"director\": \"Damien Chazelle\",\n    \"genero\": [\"Drama\", \"Musical\"],\n    \"calificacion\": 8.5,\n    \"duracion_minutos\": 119,\n    \"sinopsis\": \"Una joven actriz y un músico buscan sus sueños al estilo de los héroes de Hollywood mientras luchan por mantener su relación.\",\n    \"actores_principales\": [\"Emma Stone\", \"Ryan Gosling\"],\n    \"presupuesto_millones_usd\": 40,\n    \"ganadora_oscar\": true\n}",
+      "validation_passed": true,
+      "validation_error": null,
+      "parsed_data": {
+        "titulo": "La La Land",
+        "año": 2016,
+        "director": "Damien Chazelle",
+        "genero": [
+          "Drama",
+          "Musical"
+        ],
+        "calificacion": 8.5,
+        "duracion_minutos": 119,
+        "sinopsis": "Una joven actriz y un músico buscan sus sueños al estilo de los héroes de Hollywood mientras luchan por mantener su relación.",
+        "actores_principales": [
+          "Emma Stone",
+          "Ryan Gosling"
+        ],
+        "presupuesto_millones_usd": 40.0,
+        "ganadora_oscar": true
+      },
+      "time_seconds": 19.79
+    }
+  },
+  {
+    "timestamp": "2026-02-05T13:42:51.159709",
+    "test_type": "structured_output",
+    "schema": "Pelicula",
+    "prompt": "Genera información sobre una película famosa en formato JSON.\nEl JSON debe tener EXACTAMENTE esta estructura (sin texto adicional, solo el JSON):\n{\n    \"titulo\": \"string\",\n    \"año\": number (1900-2026),\n    \"director\": \"string\",\n    \"genero\": [\"string\", ...],\n    \"calificacion\": number (0-10),\n    \"duracion_minutos\": number,\n    \"sinopsis\": \"string (mínimo 10 caracteres)\",\n    \"actores_principales\": [\"string\", ...],\n    \"presupuesto_millones_usd\": number o null,\n    \"ganadora_oscar\": boolean\n}\n\nResponde SOLO con el JSON válido, sin explicaciones ni markdown.",
+    "gemini": {
+      "model": "gemini-3-flash-preview",
+      "raw_response": "{\n    \"titulo\": \"El Padrino\",\n    \"año\": 1972,\n    \"director\": \"Francis Ford Coppola\",\n    \"genero\": [\"Crimen\", \"Drama\"],\n    \"calificacion\": 9.2,\n    \"duracion_minutos\": 175,\n    \"sinopsis\": \"El envejecido patriarca de una dinastía del crimen organizado traslada el control de su imperio clandestino a su hijo renuente.\",\n    \"actores_principales\": [\"Marlon Brando\", \"Al Pacino\", \"James Caan\"],\n    \"presupuesto_millones_usd\": 6,\n    \"ganadora_oscar\": true\n}",
+      "validation_passed": true,
+      "validation_error": null,
+      "parsed_data": {
+        "titulo": "El Padrino",
+        "año": 1972,
+        "director": "Francis Ford Coppola",
+        "genero": [
+          "Crimen",
+          "Drama"
+        ],
+        "calificacion": 9.2,
+        "duracion_minutos": 175,
+        "sinopsis": "El envejecido patriarca de una dinastía del crimen organizado traslada el control de su imperio clandestino a su hijo renuente.",
+        "actores_principales": [
+          "Marlon Brando",
+          "Al Pacino",
+          "James Caan"
+        ],
+        "presupuesto_millones_usd": 6.0,
+        "ganadora_oscar": true
+      },
+      "time_seconds": 4.79
+    },
+    "ollama": {
+      "model": "qwen2.5:3b",
+      "raw_response": "{\n    \"titulo\": \"Avatar\",\n    \"año\": 2009,\n    \"director\": \"James Cameron\",\n    \"genero\": [\"Acción\", \"Ciencia Ficción\"],\n    \"calificacion\": 8.8,\n    \"duracion_minutos\": 162,\n    \"sinopsis\": \"Un ingeniero de una corporación de tecnología, Jake Surname, viaja a un planeta llamado Pandora para encontrar un mineral que podría salvar a su empresa de la bancarrota.\",\n    \"actores_principales\": [\"Sam Worthington\", \" Zoe Saldana\", \" Stephen Lang\"],\n    \"presupuesto_millones_usd\": 279,\n    \"ganadora_oscar\": false\n}",
+      "validation_passed": true,
+      "validation_error": null,
+      "parsed_data": {
+        "titulo": "Avatar",
+        "año": 2009,
+        "director": "James Cameron",
+        "genero": [
+          "Acción",
+          "Ciencia Ficción"
+        ],
+        "calificacion": 8.8,
+        "duracion_minutos": 162,
+        "sinopsis": "Un ingeniero de una corporación de tecnología, Jake Surname, viaja a un planeta llamado Pandora para encontrar un mineral que podría salvar a su empresa de la bancarrota.",
+        "actores_principales": [
+          "Sam Worthington",
+          " Zoe Saldana",
+          " Stephen Lang"
+        ],
+        "presupuesto_millones_usd": 279.0,
+        "ganadora_oscar": false
+      },
+      "time_seconds": 21.16
+    }
+  },
+  {
+    "timestamp": "2026-02-05T15:59:34.914796",
+    "test_type": "structured_output",
+    "schema": "Pelicula",
+    "prompt": "Genera información sobre una película famosa en formato JSON.\nEl JSON debe tener EXACTAMENTE esta estructura (sin texto adicional, solo el JSON):\n{\n    \"titulo\": \"string\",\n    \"año\": number (1900-2026),\n    \"director\": \"string\",\n    \"genero\": [\"string\", ...],\n    \"calificacion\": number (0-10),\n    \"duracion_minutos\": number,\n    \"sinopsis\": \"string (mínimo 10 caracteres)\",\n    \"actores_principales\": [\"string\", ...],\n    \"presupuesto_millones_usd\": number o null,\n    \"ganadora_oscar\": boolean\n}\n\nResponde SOLO con el JSON válido, sin explicaciones ni markdown.",
+    "gemini": {
+      "model": "gemini-3-flash-preview",
+      "raw_response": "{\n    \"titulo\": \"El Padrino\",\n    \"año\": 1972,\n    \"director\": \"Francis Ford Coppola\",\n    \"genero\": [\"Crimen\", \"Drama\"],\n    \"calificacion\": 9.2,\n    \"duracion_minutos\": 175,\n    \"sinopsis\": \"El envejecido patriarca de una dinastía del crimen organizado transfiere el control de su imperio clandestino a su reacio hijo.\",\n    \"actores_principales\": [\"Marlon Brando\", \"Al Pacino\", \"James Caan\"],\n    \"presupuesto_millones_usd\": 6,\n    \"ganadora_oscar\": true\n}",
+      "validation_passed": true,
+      "validation_error": null,
+      "parsed_data": {
+        "titulo": "El Padrino",
+        "año": 1972,
+        "director": "Francis Ford Coppola",
+        "genero": [
+          "Crimen",
+          "Drama"
+        ],
+        "calificacion": 9.2,
+        "duracion_minutos": 175,
+        "sinopsis": "El envejecido patriarca de una dinastía del crimen organizado transfiere el control de su imperio clandestino a su reacio hijo.",
+        "actores_principales": [
+          "Marlon Brando",
+          "Al Pacino",
+          "James Caan"
+        ],
+        "presupuesto_millones_usd": 6.0,
+        "ganadora_oscar": true
+      },
+      "time_seconds": 10.9
+    },
+    "ollama": {
+      "model": "qwen2.5:3b",
+      "raw_response": "{\n    \"titulo\": \"Inception\",\n    \"año\": 2010,\n    \"director\": \"克里斯托弗·诺兰\",\n    \"genero\": [\"Ciencia Ficción\", \"Acción\", \"Terror\"],\n    \"calificacion\": 8.8,\n    \"duracion_minutos\": 142,\n    \"sinopsis\": \"Un agente de inteligencia financiera experimentado es contratado para entrar en los sueños del cerebro humano, a través de su sistema nervioso.\",\n    \"actores_principales\": [\"Leonardo DiCaprio\", \"Joseph Gordon-Levitt\", \"Tom Hardy\"],\n    \"presupuesto_millones_usd\": 140,\n    \"ganadora_oscar\": false\n}",
+      "validation_passed": true,
+      "validation_error": null,
+      "parsed_data": {
+        "titulo": "Inception",
+        "año": 2010,
+        "director": "克里斯托弗·诺兰",
+        "genero": [
+          "Ciencia Ficción",
+          "Acción",
+          "Terror"
+        ],
+        "calificacion": 8.8,
+        "duracion_minutos": 142,
+        "sinopsis": "Un agente de inteligencia financiera experimentado es contratado para entrar en los sueños del cerebro humano, a través de su sistema nervioso.",
+        "actores_principales": [
+          "Leonardo DiCaprio",
+          "Joseph Gordon-Levitt",
+          "Tom Hardy"
+        ],
+        "presupuesto_millones_usd": 140.0,
+        "ganadora_oscar": false
+      },
+      "time_seconds": 5.88
+    }
+  }
+]

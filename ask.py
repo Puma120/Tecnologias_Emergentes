@@ -11,7 +11,7 @@ load_dotenv()
 # Precios Gemini por millón de tokens (USD)
 GEMINI_INPUT_PRICE = 0.50 / 1_000_000
 GEMINI_OUTPUT_PRICE = 3.00 / 1_000_000
-
+# schema = respuesta, conceptos clave, no null, latencia, tiempo de respuesta, success or fail
 prompt = "Cuentame un chiste sobre programadores."
 
 client = genai.Client()
@@ -73,8 +73,7 @@ log_entry = {
     }
 }
 
-# Append al archivo JSON
-log_file = "logs/terminal.json"
+log_file = "logs/pydantic.json"
 os.makedirs("logs", exist_ok=True)
 
 if os.path.exists(log_file):
