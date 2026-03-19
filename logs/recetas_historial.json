@@ -1,0 +1,82 @@
+{
+  "historial": [
+    {
+      "timestamp": "2026-03-12T14:20:17.191584",
+      "receta": "nombre_de_la_receta_recomendada",
+      "calificacion": 5,
+      "comentario": "excepcional!"
+    },
+    {
+      "timestamp": "2026-03-12T14:38:04.826145",
+      "receta": "tortilla que te recomiendo es \"Excepciona",
+      "calificacion": 5,
+      "comentario": "Le doy un 5/5"
+    },
+    {
+      "timestamp": "2026-03-12T14:38:05.618380",
+      "receta": "Pastel de manzana",
+      "calificacion": 5,
+      "comentario": "Delicioso y sencillo de preparar"
+    },
+    {
+      "timestamp": "2026-03-12T15:44:00.544928",
+      "receta": "es 'Excepciona'\" con una calificación de",
+      "calificacion": 4,
+      "comentario": "Me gsuto mucho le doy un 4/5"
+    },
+    {
+      "timestamp": "2026-03-12T15:44:06.705697",
+      "receta": "Pesto Genovés",
+      "calificacion": 4,
+      "comentario": "La salsa estaba rica pero la pasta no quedó tan al dente."
+    },
+    {
+      "timestamp": "2026-03-12T15:46:57.039157",
+      "receta": "pollo a la brasa",
+      "calificacion": 1,
+      "comentario": "no me gusta el limon, le doy 1/5"
+    },
+    {
+      "timestamp": "2026-03-12T15:46:58.233681",
+      "receta": "No recuerdo la receta específica que recomendó anteriormente.",
+      "calificacion": 1,
+      "comentario": "El usuario no prefiere ingredientes como el limón."
+    },
+    {
+      "timestamp": "2026-03-12T15:59:59.114215",
+      "receta": "Pollo en salsa cremosa de tomate",
+      "calificacion": 4,
+      "comentario": "me gusto mucho le doy 4/5, dame una receta para postre"
+    },
+    {
+      "timestamp": "2026-03-12T16:00:03.233037",
+      "receta": "Pollo en salsa cremosa de tomate",
+      "calificacion": 4,
+      "comentario": "me gusto mucho le doy 4/5"
+    },
+    {
+      "timestamp": "2026-03-12T16:01:59.340719",
+      "receta": "postre deliciosa y cremosa:",
+      "calificacion": 3,
+      "comentario": "estuvo buena, le doy 3/5"
+    },
+    {
+      "timestamp": "2026-03-12T16:02:06.085134",
+      "receta": "Postre cremoso",
+      "calificacion": 3,
+      "comentario": "estuvo buena"
+    }
+  ],
+  "favoritas": [
+    "nombre_de_la_receta_recomendada",
+    "tortilla que te recomiendo es \"Excepciona",
+    "Pastel de manzana",
+    "es 'Excepciona'\" con una calificación de",
+    "Pesto Genovés",
+    "Pollo en salsa cremosa de tomate"
+  ],
+  "evitar": [
+    "pollo a la brasa",
+    "No recuerdo la receta específica que recomendó anteriormente."
+  ]
+}
